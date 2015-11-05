@@ -166,12 +166,12 @@ public class Popover: UIView {
   }
 
   public func show(contentView: UIView, point: CGPoint, inView: UIView) {
-    self.blackOverlay.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-    self.blackOverlay.frame = inView.bounds
-    self.blackOverlay.backgroundColor = self.blackOverlayColor
-    inView.addSubview(self.blackOverlay)
+    // self.blackOverlay.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+    // self.blackOverlay.frame = inView.bounds
+    // self.blackOverlay.backgroundColor = self.blackOverlayColor
+    // inView.addSubview(self.blackOverlay)
 
-    self.blackOverlay.addTarget(self, action: "dismiss", forControlEvents: .TouchUpInside)
+    // self.blackOverlay.addTarget(self, action: "dismiss", forControlEvents: .TouchUpInside)
 
     self.containerView = inView
     self.contentView = contentView
